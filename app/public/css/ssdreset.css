@@ -1,0 +1,87 @@
+
+
+/*######################################################################################################################*/
+/**     AS PRESENTES CASSES E QUALQUER SIMBOLOGIA AQUI DESCRITAS NAS LINHAS ABAIXO; FORAM TIRADAS DE SITES DE 
+ *  ESTUDO OU MESMO SITES E BLOGS DA INTERNET COM ALGUNS LINKS QUE ESTÃO SENDO DISPONIBILIZADOS LOGO ABAIXO; NÃO SENDO 
+ * IMPOSTAS AS SANÇÕES DE DIREITOS AUTORAIS POIS SÃO DE DOMINIOS PUBLICOS E NÃO FORAM CRIADAS PELO DESENVOLVEDOR 
+ * PRESENTE NESTE SISTEMA; CLARO QUE POR SEREM DE CONHECIMENTO PUBLICOS E DIRETO FORAM AQUI ADAPTADAS AS NECESSIDADES 
+ * DESTE PROJETO TORNANDO-SE PARTE DO DESENVOLVIMENTO DELE; NO DEMAIS NOS RESERVAMOS O DIRETO DE TAMBÉM TORNAR PUBLICOS 
+ * AS PARTES DESENVOLVIDAS AQUI, A FIM DE QUE OUTROS POSSAM FAZER USO E ADPATAÇÕES COMO CONVIER NO FUTURO. E AS CLASSES 
+ * QUE ESTÃO DESENVOLVIDAS NESTE PROJETO DE NOSSA AUTORIA TAMBÉM FICAM A DISPOSIÇÃO PARA SEREM ALTERADAS CONFORME 
+ * MELHOR SE ADAPTAR AO SEU PROJETO FUTURO.
+ * 
+ *                                      GRATOS PELA COMPREENSSÃO. :)
+ * 
+ * https://github.com/fernandoleonid/consumo-api-js/tree/main/01-viacep
+ * https://www.sansoaresdeveloper.com.br
+ * https://www.sansoaresdeveloper.com
+ * https://codepen.io/ruiguilherme/pen/OJmZEBb -- POR: Rui Guilerme da Cunha
+ 
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+/*######################################################################################################################*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*######################################################################################################################*/
+/* FOLHA DE ESTILO PADRÃO PARA TODO O SISTEMA DO PROGRAMA */
+/** DEFIMOS COR PADRÃO E FONTE PADRÃO PARA O CORPO DO SISTEMA/SITE;  AJUSTES BEM AQUI; COMO MOSTRADO ABAIXO */
+/*######################################################################################################################*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, marquee,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-size: 100%;
+    list-style-type: none;
+    background-color: #052D05;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
