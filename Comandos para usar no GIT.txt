@@ -1,0 +1,165 @@
+COMANDOS PARA USAR NO GIT
+
+Os comandos listados abaixo devem ser rodados no terminal para execução 
+
+Verificar a versão ou se está instalado na máquina = git --version
+
+Configurar o usuário(o mesmo de sua conta no github) = git config --global user.name "XXXXXX"
+
+Configurar o email(o mesmo de sua conta no github) = git config --global user.email "XXXXXXXXXXXXXXXXXXX"
+
+Mostrará dados de variáveis salvas no sistema; além de projetos, alterações e até seu usuário e seu email da sua conta no GitHub =  git config --list
+
+Para recuperar um item em especifico(substituir o que quer onde estão os XXXX) = git config --get user.XXXXX
+
+Podemos criar uma pasta para um determinado projeto pelo terminal com o seguinte comando; sendo antes necessário verificar(se tiver vários disco(HDs)) em qual diretório seu projeto ficará = mkdir + nome da pasta que vc quer criar
+
+Com esta comando também digitado no terminal se inicializa o monitoramento pelo GIT do seu projeto(cria uma pasta .git/ que dependendo estará oculta ou não) = git init
+
+Para verificar um projeto GIT já existente ou não em uma pasta = git status
+
+Para o git monitorar um arquivo ou pasta específico em uso com alterações, precisamos adicioná-lo dentro do repositório = git add + nome(pasta ou arquivo) com sua extensão
+
+Para o git monitorar todas alterações em uso com alterações dentro do repositório = git add + .
+
+O histórico de alterações no projeto passa a ser verificado no momento do commit feito; como voltar no tempo(ESTÁGIO ANTERIOR) antes das alterações = 
+git commit -m "AQUI VAI A MENSAGEM DE ALTERAÇÃO, DEVER SER O MAIS EXPLICATIVA POSSÍVEL"
+
+Para verificar as alterações realizadas = git log
+
+Para consultar os comandos e ter ajuda do GIT = git commit -help
+
+Para saber todos os comandos do GIT = git help --all
+
+Listar sua branch(a versão mais atual) = git branch
+
+Criar uma nova branch, digite o comando seguido do nome da sua branch = git branch + nome da branch
+
+Para irmos para a nova branch ou voltar para anterior = git switch + nome da branch
+Detalhe que arquivos e qualquer alteração realizada numa determinada branch fica na branch alterada
+com isso temos as disponibilidade de versões a ser criadas durante o desenvolvimento
+
+Para criar uma branch e logo após ir para ela = git checkout -b + nome da branch
+
+Para criar uma branch e logo após ir para ela = git switch -c + nome da branch
+Detalhe aqui podemos usar este recurso quando for detectado algum problema na branch master; para
+não afetar a branch master, podemos criar uma branch para resolver o problema e logo após
+voltar para a branch master
+
+Para juntar ou sobrepor sobre a branch master do projeto com as correções devidamente feitas 
+usamos = git merge + nome da branch
+
+Para deletar uma branch = git branch -d + nome da branch
+
+Para deletar uma branch que não foi feita o checkout = git branch -d + nome da branch
+
+Para abortar ou desfazer um merge em conflito = git merge --abortar
+
+
+GITHUB
+================
+
+Em sua conta do GitHub na internet crie um repositório para desenvolvimento.
+Clone este repositório usando sua URL ou modos dispovíveis para isso  que estão lá no site as opções
+para o seu projeto. Adicione um READ.md para facilitar a disponibiblidade de informações para futuras
+alterações e melhorias no projeto.
+
+Para criar um novo repositório no GitHub = https://github.com/new/nome do repositório dentro da sua conta
+
+Crie uma pasta em seu desktop, que ira ser usada com repositorio local, no seu terminal de desenvolvimento
+acesse a sua area de desenvolvimento(pasta) e dentro dela estará vázia; após ter acessado a pasta pelo terminal
+execute o comando = git clone + URL do repositório no GitHub 
+
+Após a clonagem e dentro do novo repositório criado digite git status e verás que estas na branch chamada "main" 
+e não tem commits a serem feitos, lembrando que a palavra "origin" refere-se ao local remoto do repositório ou 
+eja o link copiado anteriormente em sua conta no GITHUB; ambas já estão em sincronia e atualizadas sem commits a 
+fazer 
+
+Instalando o Github CLI, auxilia na autenticação e comunicação, integrando o desenvolvimento ao repositorio
+de forma agilizar seu projeto até mesmo com uma melhor autenticação mais segurança na pratica.
+Baixar no link a seguir = https://cli.github.com/
+
+Para saber se está instalado, no terminal de sua preferência digite = gh --version
+Sera exibido uma informação com a versão instalada e o link onde foi baixado; caso não seja assim
+então você precisa baixar novamente o instalador e seguir as instruções para a instalar novamente.
+
+Autenticando via HTTPS, agora vamos fazer nossa entrada no site onde há sua conta no GITHUB; de
+duas formas podemos autenticar via linha de comando.
+
+1º - Via site do GITHUB com seu usuário e senha que vc definiu no momento que criou sua conta.
+2º - Via token de acesso, que vc pode criar no site do GITHUB, e que tem uma validade de segurança
+de 7 dias ou até indeterminado; porém não aconselho por fatrop de segurança se tornar um risco; 
+após o término da validade vc precisa criar um novo token de acesso.
+O principais metodos de acesso são HTTPS, SSH e o token, vamos cria-lo no site do GITHUB; ativando 
+também a autenticação pro dois fatores que é recomendada e a opção de token de acesso, é copiar o 
+token gerado e colar no momento da autenticação no terminal de sua preferência; no terminal digite
+
+= gh auth login 
+
+Tecle enter e escolha onde sua conta GITHUB foi criada, geralmente no GitHub.com, faça a escolha utilizando
+as seta para baixo ou para cima; após escolhe tecle enter, escolha o protocolo de autenticação
+HTTPS ou SSH, faça a escolha utilizando as seta para baixo ou para cima, será solicitado usar as suas 
+credências da sua conta no GitHub, Y = sim ou n = não; feito isso é perguntado como será ou onde será
+feito a autenticação, aqui preste atenção:
+Use a opção "Login with a web browser", se não tiver criado nenhum token em sua conta senão use a opção;
+Use a opção "Paste an authentication token", se já tiver criado um token em sua conta; após o login 
+proceda para criar um token com validade definida; copie o código que aparecerá na tela, o mesmo         
+será usado a seguir, tecle enter para abrir o site do Github no navegador; cole ou digite seu código,
+autentique sua entrada, aqui se vc já tiver sua autenticação de dois fatores ativada digite o código
+do sua app de autenticação, uma mensagem de autenticação com sucesso aparecerá.
+Voltando ao seu terminal também será a mesma informação de autenticado com sucesso, e verá seu nome 
+de usuário; aqui sua entrada se dá por protocolo "HTTPS".
+
+Autenticando via TOKEN, nesta caso ele substitui a sua senha e deve ser usado com segurança.
+O TOKEN é gerado no site do GitHub e tem tempo de expiração definido, acesse no seu perfil, vá em 
+configurações, role o menu direito até Configurações do Desenvolvedor, escolha Tokens de Acesso Pessoal,
+Fichas(clássico), aqui vc poderá ver seus tokens criados anteriormente ou criar um novo ou ainda excluir
+um existente; o importante é copiar o "TOKEM GERADO", ele só exibido uma única vez; clique na opção 
+"Gerar Novo Token Clássico", e copie o código gerado, ele também precisará de permissões específicas de 
+uso, escolha as opções conforme demanda seu projeto, cedendo aos seus colaboradores tipos de alterações
+limitantes, não esqueça de colocar um nome para o seu TOKEN isso o identificará mais fácil e limitar sua 
+validade de expiração. Clique em "Gerar o Token". TOKEN devidamente copiado, descreva como o exemplo 
+abaixo:
+
+Retorne ao seu terminal de preferência e digite = gh auth login
+
+Repita os passo anteriores, se for perguntado se deseja re-autenticar responda Y = sim, escolha o protocolo
+de autenticação HTTPS(faça a escolha utilizando as seta para baixo), utilize as credenciais da sua conta
+no GitHub, Y = sim ou n = não; escolha a opção "Paste an authentication token", cole o token copiado no 
+site do GitHub, tecle enter para entrar; detalhe pode ser que ele exija que vc habilite alguma opção espe-
+cifica na sua conta do GitHub, leia a mensagem de "error validation token", após ela vira a opção a ser 
+habilitado, retorne a sua conta, atualize o token, repita o código "gh auth login", refazendo seus passos
+anteriores, após a autenticação com sucesso, sua entrada mostrará seu usuário da conta no GitHub.
+Fique atento a validade DO SEU TOKEN.
+
+Para visualizarmos os caminhos da origem após clonagem do repositório = git remote -v
+Assim teremos agora uma conexão entre o repositório local com o remoto por onde ambos se comunicam
+
+
+Enviando alterações pro Github
+=====================================
+
+Feito todas alterações necessárias em seu repositório local perceba que nada é alterado no repositório web sendo assim precisamos fazer um push, precisarei enviar para o repositório remoto, fazendo uma sincronização de ambos por meio do comando git push, detalhe será preciso estar tudo certo dentro do repositório local sem nada para commitar ou adicionar qualquer coisa; sendo assim digitaremos
+
+= git push origin
+
+Para vermos o endereço do "origin" digitamos 
+
+= git remote -v
+
+será exibido o endereço fetch(de onde vem os dados, clonagem) e o endereço push(para onde mandamos os dados, nuvem; site GitHub, tem a oportunidade de setar em que repositório os dados serão enviados), que representa o repositório remoto na nuvem ou site do GitHub, como  preferir falar.
+
+Recebendo alterações do Github 1
+=====================================
+
+É recomendado que sempre que for iniciar seu trabalho em qualquer repositório local utilize o comando para que as alterações feitas por outros colaboradores no projeto sejam sincronizadas com o seu repositório local, essas alterações podem ser feitas diretamente no site do git por um colaborar externo ou em seu repositório também local(na máquina de trabalho do colaborador), precisamos trazer do web para o local, digitamos então 
+
+= git pull origin
+
+Se estiver ou for necessário especifique a "origin", de onde vc vai trazer os dados; lembrando que no pull ele usa como o endereço o fetch, que nada mais é o link do seu repositório web.
+Deve ser feito sempre que se começa a trabalhar no repositório para que esteja tudo atualizado em ambos os locais remoto e web. divulgue isso com quem está desenvolvendo em conjunto afim de tornar masi produtiva suas horas de trabalho evitando ter divergência no projeto ou prejuizos de performance, perca de dados e até falhe grave no sistema em produção. 
+Vale lembrar que mais de uma cópia sempre que possível evita muita dor de cabeça. :)
+
+
+Recebendo alterações do Github 2
+=====================================
