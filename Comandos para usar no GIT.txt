@@ -176,8 +176,8 @@ horas de trabalho evitando ter divergência no projeto ou prejuizos de performan
 grave no sistema em produção. 
 Vale lembrar que mais de uma cópia sempre que possível evita muita dor de cabeça. :)
 
-= git pull origin( https://github.com/repositório do projeto/pasta de destino na máquina ) + nome que vc escolheu 
-para sua de trabalho
+= git pull origin( https://github.com/nome do usuário no GitHub/repositório do projeto) + nome que vc escolheu 
+na sua máquinade trabalho
 
 A pasta também já pode ser criada no momento da clonagem, observe o modelo do link acima e apos a pasta de destino
 dê um espaço e escolha o nome da sua pasta de preferência
