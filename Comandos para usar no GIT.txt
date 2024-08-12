@@ -177,7 +177,7 @@ grave no sistema em produção.
 Vale lembrar que mais de uma cópia sempre que possível evita muita dor de cabeça. :)
 
 = git pull origin( https://github.com/nome do usuário no GitHub/repositório do projeto) + nome que vc escolheu 
-na sua máquinade trabalho
+na sua máquina de trabalho
 
 A pasta também já pode ser criada no momento da clonagem, observe o modelo do link acima e apos a pasta de destino
 dê um espaço e escolha o nome da sua pasta de preferência
