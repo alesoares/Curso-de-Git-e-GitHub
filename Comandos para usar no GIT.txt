@@ -182,3 +182,40 @@ para sua de trabalho
 A pasta também já pode ser criada no momento da clonagem, observe o modelo do link acima e apos a pasta de destino
 dê um espaço e escolha o nome da sua pasta de preferência
 
+Entendendo Tags
+=====================================
+
+São usadas para expecificar um commit no nosso histórico, usadas na representação de versão do projeto, onde se 
+por alguma eventualidade tivermos que voltar atraz no codigo por erro, mal funcionamento, n motivos podem ser 
+listados, as tags são nomes de versão do sistema. Funciona assim, com a identificação do commit que desaja nomear
+tipo:
+
+= git tag -a v-0.0.1 -m "Versão 1.0 do sistema" + número de identificação do commit
+= git tag -a v-0.0.1 -m "Versão 1.0 do projeto" + número de identificação do commit
+
+Para ver quais as tags que o sistema possue digte:
+
+= git tag -l ou
+= git tag --list
+
+Se quiser fazer uma comparação e saber o que tem de diferente entre os commits feitos, basta digitar o comando 
+
+= git diff + número de identificação do commit + o valor da tag criada ou melhor que versão que comparar
+
+No site do GitHub também podemos ver as tags que ja foram criadas anteriormente e que versões elas representam.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
