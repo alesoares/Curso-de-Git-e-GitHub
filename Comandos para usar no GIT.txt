@@ -139,7 +139,10 @@ Assim teremos agora uma conexão entre o repositório local com o remoto por ond
 Enviando alterações pro Github
 =====================================
 
-Feito todas alterações necessárias em seu repositório local perceba que nada é alterado no repositório web sendo assim precisamos fazer um push, precisarei enviar para o repositório remoto, fazendo uma sincronização de ambos por meio do comando git push, detalhe será preciso estar tudo certo dentro do repositório local sem nada para commitar ou adicionar qualquer coisa; sendo assim digitaremos
+Feito todas alterações necessárias em seu repositório local perceba que nada é alterado no repositório web 
+sendo assim precisamos fazer um push, precisarei enviar para o repositório remoto, fazendo uma sincronização 
+de ambos por meio do comando git push, detalhe será preciso estar tudo certo dentro do repositório local sem 
+nada para commitar ou adicionar qualquer coisa; sendo assim digitaremos
 
 = git push origin
 
@@ -147,19 +150,35 @@ Para vermos o endereço do "origin" digitamos
 
 = git remote -v
 
-será exibido o endereço fetch(de onde vem os dados, clonagem) e o endereço push(para onde mandamos os dados, nuvem; site GitHub, tem a oportunidade de setar em que repositório os dados serão enviados), que representa o repositório remoto na nuvem ou site do GitHub, como  preferir falar.
+será exibido o endereço fetch(de onde vem os dados, clonagem) e o endereço push(para onde mandamos os dados,
+nuvem; site GitHub, tem a oportunidade de setar em que repositório os dados serão enviados), que representa 
+o repositório remoto na nuvem ou site do GitHub, como  preferir falar.
 
 Recebendo alterações do Github 1
 =====================================
 
-É recomendado que sempre que for iniciar seu trabalho em qualquer repositório local utilize o comando para que as alterações feitas por outros colaboradores no projeto sejam sincronizadas com o seu repositório local, essas alterações podem ser feitas diretamente no site do git por um colaborar externo ou em seu repositório também local(na máquina de trabalho do colaborador), precisamos trazer do web para o local, digitamos então 
+É recomendado que sempre que for iniciar seu trabalho em qualquer repositório local utilize o comando para 
+que as alterações feitas por outros colaboradores no projeto sejam sincronizadas com o seu repositório local, 
+essas alterações podem ser feitas diretamente no site do git por um colaborar externo ou em seu repositório 
+também local(na máquina de trabalho do colaborador), precisamos trazer do web para o local, digitamos então 
 
-= git pull origin
-
-Se estiver ou for necessário especifique a "origin", de onde vc vai trazer os dados; lembrando que no pull ele usa como o endereço o fetch, que nada mais é o link do seu repositório web.
-Deve ser feito sempre que se começa a trabalhar no repositório para que esteja tudo atualizado em ambos os locais remoto e web. divulgue isso com quem está desenvolvendo em conjunto afim de tornar masi produtiva suas horas de trabalho evitando ter divergência no projeto ou prejuizos de performance, perca de dados e até falhe grave no sistema em produção. 
-Vale lembrar que mais de uma cópia sempre que possível evita muita dor de cabeça. :)
-
+= git pull 
 
 Recebendo alterações do Github 2
 =====================================
+
+Se estiver ou for necessário especifique a "origin", de onde vc vai trazer os dados; lembrando que no pull ele 
+usa como o endereço o fetch, que nada mais é o link do seu repositório web. É nele que o colaborador deve fazer 
+a clonagem de repositório para sua máquina local.
+Deve ser feito sempre que se começar a trabalhar no repositório para que esteja tudo atualizado em ambos os 
+locais remoto e web. divulgue isso com quem está desenvolvendo em conjunto afim de tornar mais produtiva suas 
+horas de trabalho evitando ter divergência no projeto ou prejuizos de performance, perca de dados e até falhe 
+grave no sistema em produção. 
+Vale lembrar que mais de uma cópia sempre que possível evita muita dor de cabeça. :)
+
+= git pull origin( https://github.com/repositório do projeto/pasta de destino na máquina ) + nome que vc escolheu 
+para sua de trabalho
+
+A pasta também já pode ser criada no momento da clonagem, observe o modelo do link acima e apos a pasta de destino
+dê um espaço e escolha o nome da sua pasta de preferência
+
