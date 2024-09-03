@@ -68,7 +68,9 @@ Para criar um novo repositório no GitHub = https://github.com/new/nome do repos
 
 Crie uma pasta em seu desktop, que ira ser usada com repositorio local, no seu terminal de desenvolvimento
 acesse a sua area de desenvolvimento(pasta) e dentro dela estará vázia; após ter acessado a pasta pelo terminal
-execute o comando = git clone + URL do repositório no GitHub 
+execute o comando:
+
+= git clone + URL do repositório no GitHub 
 
 Após a clonagem e dentro do novo repositório criado digite git status e verás que estas na branch chamada "main" 
 e não tem commits a serem feitos, lembrando que a palavra "origin" refere-se ao local remoto do repositório ou 
