@@ -46,8 +46,9 @@ Detalhe aqui podemos usar este recurso quando for detectado algum problema na br
 não afetar a branch master, podemos criar uma branch para resolver o problema e logo após
 voltar para a branch master
 
-Para juntar ou sobrepor sobre a branch master do projeto com as correções devidamente feitas 
-usamos = git merge + nome da branch
+Para juntar ou sobrepor sobre a branch master do projeto com as correções devidamente feitas usamos 
+
+= git merge + nome da branch
 
 Para deletar uma branch = git branch -d + nome da branch
 
@@ -222,10 +223,13 @@ Para criarmos uma nova branch digite:
 
 = git branch + nome da sua branch secundária
 
-Detalhe ela é criada a partir do histórico atual, então aqui  já podemos utilizar o conmceito de tag visto anteriormente
-para identificar a versão do sistema, e assim podemos criar uma branch com a tag. Mudamos para a branch nova com o comando
-também já visto anteriormente:
+Detalhe ela é criada a partir do histórico atual, então aqui já podemos utilizar o conceito de tag visto anteriormente
+para identificar a versão do sistema, e assim podemos criar uma branch com a tag. 
+
+Mudamos para a branch nova com o comando também já visto anteriormente:
+
 = git switch + nome da sua branch secundária 
+
 = git checkout + nome da sua branch secundária
 = git checkout -b + nome da sua branch secundária
 = git checkout -b + nome da sua branch secundária + tag criada
