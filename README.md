@@ -1,4 +1,4 @@
-# Curso-de-Git
+# Curso de Git e GitHub
 
 Comecei minha jornada de aprendizado para usar as funcionalidades do Git e GitHub.
 
