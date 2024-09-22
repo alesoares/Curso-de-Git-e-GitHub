@@ -6,7 +6,7 @@ Assim ter ampliação das minhas hardskills em desenvolvimento web.
 
 Ao longo dos proximos meses farei varias atualizações importantes em meus repositórios criados nesta conta.
 
-Git e GitHub são ferramentas fundamentais no mundo do desenvolvimento de software, e aprender a usá-las pode ser transformador para a minha carreira. No curso da B7Web, eu comecei a entender como essas tecnologias ajudam a trabalhar de forma colaborativa e organizada, facilitando o versionamento de código e o gerenciamento de projetos.
+Git e GitHub são ferramentas fundamentais no mundo do desenvolvimento de software, e aprender a usá-las pode ser transformador para a minha carreira. No curso, eu comecei a entender como essas tecnologias ajudam a trabalhar de forma colaborativa e organizada, facilitando o versionamento de código e o gerenciamento de projetos.
 
 ### O que é Git?
 Git é um sistema de controle de versão distribuído. Isso significa que ele permite que você acompanhe todas as mudanças feitas em um projeto, facilitando a colaboração entre várias pessoas e a reversão de alterações indesejadas. No curso, você aprende a inicializar um repositório Git, entender o ciclo de vida dos arquivos, e usar comandos como `git add`, `git commit`, `git push` e `git pull`.
