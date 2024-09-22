@@ -1,4 +1,4 @@
-# Curso-de-Git B7Web
+# Curso-de-Git
 
 Comecei minha jornada de aprendizado para usar as funcionalidades do Git e GitHub.
 
@@ -14,7 +14,7 @@ Git é um sistema de controle de versão distribuído. Isso significa que ele pe
 ### O que é GitHub?
 GitHub é uma plataforma baseada na nuvem que permite armazenar seus repositórios Git online e compartilhar seu trabalho com outras pessoas. Além disso, oferece recursos como **pull requests**, onde você pode propor mudanças no código e colaborar com outros desenvolvedores.
 
-### Principais tópicos abordados no curso da B7Web:
+### Principais tópicos abordados no curso:
 1. **Iniciando com Git**: Você aprenderá os conceitos fundamentais do Git e como configurá-lo na sua máquina.
 2. **Trabalhando com repositórios locais e remotos**: O curso ensina como criar repositórios locais e sincronizá-los com repositórios remotos no GitHub.
 3. **Branching e Merging**: Criar e trabalhar com branches (ramificações) para desenvolver novas funcionalidades sem interferir no código principal.
