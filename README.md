@@ -24,6 +24,6 @@ GitHub é uma plataforma baseada na nuvem que permite armazenar seus repositóri
 Ao concluir o curso, tenho uma compreensão sólida de como usar Git e GitHub no dia a dia de um desenvolvedor. Essas habilidades são essenciais para qualquer profissional que deseja trabalhar com projetos de desenvolvimento de software, sejam eles individuais ou colaborativos.
 
 Essa introdução é apenas o começo da jornada, e com a prática, o uso dessas ferramentas me tornarei cada vez eficiente, será uma coisa tão natural pra mim que já não terei medo de responder:
-**Você poedria me explicar em poucas palavras o que é GIT e GitHub???**
+**Você poderia me explicar em poucas palavras o que é GIT e GitHub???**
 
 **Alessandro**
